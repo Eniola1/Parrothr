@@ -1,0 +1,115 @@
+#control_panel {
+    float: right;
+    width: 50%;
+    /* height: 800px; */
+    /* background-color: black; */
+    display: flex;
+    flex: 1;
+    position: absolute;
+    bottom: 100px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+#divider {
+    float: left;
+    width: 5%;
+    height: 800px;
+}
+
+#control_panel button {
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    background-color: #1E007F;
+    color: #fff;
+    transition: all .5s ease;
+    text-transform: uppercase;
+}
+#control_panel button:hover {
+    cursor: pointer;
+}
+#sourceText{
+    border: 1px solid #d5d5d5;
+    font-size: 14px;
+    padding: 5px;
+    text-align: left;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1);
+    transition: all .5s ease;
+    border-radius: 5px;
+}
+#sourceText:focus {
+    box-shadow: none;
+}
+button#add_child, button#remove_node, button#edit_node{
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    width: 120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+button#edit_node{
+    padding: 5px 0;
+    transition: all .5s ease;
+}
+button#add_child:hover, button#remove_node:hover{
+    background-color: #FF8500;
+}
+button#edit_node:hover{
+    background-color: #FF8500;
+    color: #fff;
+}
+#information_panel {
+    background-color: gold;
+}
+
+#information_panel ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.section {
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#header {
+    text-align: center;
+    background-color: black;
+    color: gold;
+    font-size: 24px;
+    display: none;
+}
+
+#main {
+       /* float: left; */
+       width: 100%;
+       height: 800px;
+       display: flex;
+       justify-content: center;
+       margin: auto;
+       align-items: center;
+}
+
+#main canvas {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main input {
+    width: 100px;
+    height: 50px;
+}
+
